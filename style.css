@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(187, 120, 250);
+    color: #fff;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 10px;
+    font-size: 30px;
+}
+nav ul{
+    list-style-type: none;
+   
+}
+.ticTac-Container{
+display: flex;
+justify-content: center;
+margin-top: 40px;
+}
+.container{
+display: grid;
+grid-template-columns: repeat(3, 10vw);
+grid-template-rows: repeat(3, 10vw);
+font-family:  'Montserrat', sans-serif;
+position: relative;
+}
+
+.box{
+border: 2px solid black;
+font-size:  7vw;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 800;
+}
+.box:hover{
+  background-color: rgb(252, 191, 203);
+ 
+    }
+    .game-info{
+        padding: 0px 30px;
+        font-family: 'Montserrat', sans-serif;
+    }
+.img-gif img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 13px;
+    padding: 5px 15px;
+    background-color:#f2ab8f;
+    font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      border-radius: 50px;
+      cursor: pointer;
+}
+.info{
+    font-size: 30px;
+    font-weight: 800;
+}
+.game-info{
+    font-size: 20px;
+}
+.line{
+background-color: black;
+width: 0;
+height: 3px;
+position: absolute;
+transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 930px) {
+    
+    .ticTac-Container{
+  flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 653px){
+  
+    .game-info{
+    font-size: 10px;
+   
+   }
+   #reset{
+    font-size: 15px;
+   }
+   .info{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+  }
+  @media screen and (max-width: 500px){
+  
+    .game-info{
+    font-size: 10px;
+    margin-top: 15px;
+   }
+ 
+  }
+
